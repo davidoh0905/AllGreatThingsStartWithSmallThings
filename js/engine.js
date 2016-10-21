@@ -47,6 +47,7 @@ var Engine = (function(global) {
          */
         update(dt);
         render();
+        reset();
 
         /* Set our lastTime variable which is used to determine the time delta
          * for the next time this function is called.
@@ -160,7 +161,10 @@ var Engine = (function(global) {
      */
     function reset() {
         // noop
+        //just like updateEntities....
+        player.reset();
     }
+//HAHA!!!! found you and added you into the main!!!!!
 
     /* Go ahead and load all of the images we know we're going to need to
      * draw our game level. Then set init as the callback method, so that when
